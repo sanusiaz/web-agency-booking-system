@@ -13,10 +13,13 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
+            $table->string('company_name')->nullable();
             $table->text('inspiration_websites')->nullable();
             $table->text('notes')->nullable();
             $table->string('budget');
             $table->string('currency')->default('USD');
+            $table->string('country');
+            $table->json('services');
             $table->string('consultation_method');
             $table->date('preferred_date');
             $table->string('preferred_time');

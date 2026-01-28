@@ -22,6 +22,10 @@ class BookingController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:50',
+            'company_name' => 'nullable|string|max:255',
+            'country' => 'required|string|max:255',
+            'services' => 'required|array',
+            'services.*' => 'string',
             'inspiration_websites' => 'nullable|string',
             'notes' => 'required|string', // "Tell us about your website or project"
             'budget' => 'required|string',

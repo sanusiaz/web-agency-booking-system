@@ -20,6 +20,9 @@
             <h3>Client Details:</h3>
             <ul>
                 <li><strong>Name:</strong> {{ $booking->name }}</li>
+                @if($booking->company_name)
+                    <li><strong>Company:</strong> {{ $booking->company_name }}</li>
+                @endif
                 <li><strong>Date:</strong> {{ $booking->preferred_date->format('l, F j, Y') }}</li>
                 <li><strong>Time:</strong> {{ $booking->preferred_time }}</li>
                 <li><strong>Meeting Via:</strong> {{ $booking->consultation_method }}</li>

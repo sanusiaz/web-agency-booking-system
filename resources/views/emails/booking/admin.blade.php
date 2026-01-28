@@ -20,11 +20,16 @@
             <p><span class="label">Name:</span> {{ $booking->name }}</p>
             <p><span class="label">Email:</span> <a href="mailto:{{ $booking->email }}">{{ $booking->email }}</a></p>
             <p><span class="label">Phone:</span> {{ $booking->phone }}</p>
-            <p><span class="label">Budget:</span> {{ $booking->currency }} {{ $booking->budget }}</p>
+            @if($booking->company_name)
+                <p><span class="label">Company:</span> {{ $booking->company_name }}</p>
+            @endif
+            <p><span class="label">Country:</span> {{ $booking->country }}</p>
+            <p><span class="label">Services Needed:</span> {{ implode(', ', $booking->services) }}</p>
+            <p><span class="label">Budget:</span> {{ $booking->currency }} {{ number_format($booking->budget) }}</p>
             <p><span class="label">Method:</span> {{ $booking->consultation_method }}</p>
-            
+
             <hr>
-            
+
             <p><span class="label">Date:</span> {{ $booking->preferred_date->format('Y-m-d') }}</p>
             <p><span class="label">Time:</span> {{ $booking->preferred_time }}</p>
 

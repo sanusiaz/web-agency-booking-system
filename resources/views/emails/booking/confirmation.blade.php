@@ -17,13 +17,17 @@
         </div>
         <div class="content">
             <p>Dear <strong>{{ $booking->name }}</strong>,</p>
-            <p>Thank you for booking a consultation with our Web Agency. We have received your request and will review your project details shortly.</p>
-            
+            <p>Thank you for booking a consultation with our Agency. We have received your request and will review your project details shortly.</p>
+
             <p>One of our team members will reach out to you via {{ $booking->consultation_method }} or email to confirm the appointment.</p>
 
             <div class="details">
                 <h3>Your Booking Details:</h3>
                 <ul>
+                    <li><strong>Name:</strong> {{ $booking->name }}</li>
+                    @if($booking->company_name)
+                        <li><strong>Company:</strong> {{ $booking->company_name }}</li>
+                    @endif
                     <li><strong>Date:</strong> {{ $booking->preferred_date->format('F j, Y') }}</li>
                     <li><strong>Time:</strong> {{ $booking->preferred_time }}</li>
                     <li><strong>Method:</strong> {{ $booking->consultation_method }}</li>

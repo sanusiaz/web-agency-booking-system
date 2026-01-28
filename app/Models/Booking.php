@@ -13,10 +13,13 @@ class Booking extends Model
         'name',
         'email',
         'phone',
+        'company_name',
         'inspiration_websites',
         'notes',
         'budget',
         'currency',
+        'country',
+        'services',
         'consultation_method',
         'preferred_date',
         'preferred_time',
@@ -24,5 +27,6 @@ class Booking extends Model
 
     protected $casts = [
         'preferred_date' => 'date',
+        'services' => 'array',
     ];
 }
