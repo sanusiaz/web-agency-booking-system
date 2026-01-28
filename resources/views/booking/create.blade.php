@@ -282,6 +282,10 @@
                             <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">SEO</span>
                         </label>
                         <label class="relative flex items-center p-4 rounded-xl border-2 border-gray-700 bg-gray-800 cursor-pointer hover:border-blue-500 hover:bg-gray-750 transition duration-200 group">
+                            <input type="checkbox" name="services[]" value="E-commerce website" @if(is_array(old('services')) && in_array('E-commerce website', old('services'))) checked @endif class="h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-2 focus:ring-blue-500">
+                            <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">E-commerce website</span>
+                        </label>
+                        <label class="relative flex items-center p-4 rounded-xl border-2 border-gray-700 bg-gray-800 cursor-pointer hover:border-blue-500 hover:bg-gray-750 transition duration-200 group">
                             <input type="checkbox" name="services[]" value="Social Media Management" @if(is_array(old('services')) && in_array('Social Media Management', old('services'))) checked @endif class="h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-2 focus:ring-blue-500">
                             <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">Social Media Mgmt</span>
                         </label>
@@ -294,12 +298,20 @@
                             <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">UI/UX Design</span>
                         </label>
                         <label class="relative flex items-center p-4 rounded-xl border-2 border-gray-700 bg-gray-800 cursor-pointer hover:border-blue-500 hover:bg-gray-750 transition duration-200 group">
-                            <input type="checkbox" name="services[]" value="Graphics Design" @if(is_array(old('services')) && in_array('Graphics Design', old('services'))) checked @endif class="h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-2 focus:ring-blue-500">
-                            <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">Graphics Design</span>
+                            <input type="checkbox" name="services[]" value="Branding & Graphic Design" @if(is_array(old('services')) && in_array('Branding & Graphic Design', old('services'))) checked @endif class="h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-2 focus:ring-blue-500">
+                            <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">Branding & Graphic Design</span>
                         </label>
                         <label class="relative flex items-center p-4 rounded-xl border-2 border-gray-700 bg-gray-800 cursor-pointer hover:border-blue-500 hover:bg-gray-750 transition duration-200 group">
                             <input type="checkbox" name="services[]" value="Video Editing" @if(is_array(old('services')) && in_array('Video Editing', old('services'))) checked @endif class="h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-2 focus:ring-blue-500">
                             <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">Video Editing</span>
+                        </label>
+                        <label class="relative flex items-center p-4 rounded-xl border-2 border-gray-700 bg-gray-800 cursor-pointer hover:border-blue-500 hover:bg-gray-750 transition duration-200 group">
+                            <input type="checkbox" name="services[]" value="3D Animation" @if(is_array(old('services')) && in_array('3D Animation', old('services'))) checked @endif class="h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-2 focus:ring-blue-500">
+                            <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">3D Animation</span>
+                        </label>
+                        <label class="relative flex items-center p-4 rounded-xl border-2 border-gray-700 bg-gray-800 cursor-pointer hover:border-blue-500 hover:bg-gray-750 transition duration-200 group">
+                            <input type="checkbox" name="services[]" value="Content Creation & Strategy" @if(is_array(old('services')) && in_array('Content Creation & Strategy', old('services'))) checked @endif class="h-5 w-5 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-2 focus:ring-blue-500">
+                            <span class="ml-3 block text-sm font-medium text-gray-300 group-hover:text-blue-400 transition">Content Creation & Strategy</span>
                         </label>
                     </div>
                 </div>
